@@ -1,22 +1,26 @@
-import 'package:flutter/material.dart';
-
-class Quote{
+class Quote {
   final int id;
   final String passage, speaker, lesson;
 
-  Quote({this.id, this.passage, this.speaker, this.lesson});
+  Quote(
+      {required this.id,
+      required this.passage,
+      required this.speaker,
+      required this.lesson});
 }
 
 List<Quote> quotes = [
   Quote(
     id: 1,
-    passage: "By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; and third by experience, which is the bitterest.",
+    passage:
+        "By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; and third by experience, which is the bitterest.",
     speaker: "Confucius",
     lesson: "lesson1",
   ),
   Quote(
     id: 2,
-    passage: "Success is not final, failure is not fatal. It is the courage to continue that counts.",
+    passage:
+        "Success is not final, failure is not fatal. It is the courage to continue that counts.",
     speaker: "Winston Churchill",
     lesson: "lesson2",
   ),
